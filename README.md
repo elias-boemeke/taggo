@@ -14,31 +14,30 @@ Links: [taglib](https://taglib.org/) [go-taglib](https://github.com/wtolson/go-t
 
 ## Installation
 
-Before installation make sure you have read and understand
+First set up your go environment if not already done.  
+If you don't know how to do that, here is a tutorial:
 [How to Write Go Code](https://golang.org/doc/code.html)
 
-I assume you are using a GNU/linux operating system.
+- recommended: add your go bin directory to PATH (re-login to apply changes)  
+  this lets you run taggo without specifying an absolute path
+```
+# in file .profile
+...
+export PATH="${PATH}:${GOPATH}/bin"
+```
 
 - Install taglib with your favorite package manager i.e. `pacman -S taglib`
 - Get the required source code:
 ```
-go get https://github.com/wtolson/go-taglib
-go get https://github.com/elias-boemeke/taggo
+go get "https://github.com/wtolson/go-taglib"
+go get "https://github.com/elias-boemeke/taggo"
 ```
-- Recommended: export your GOPATH and add your go bin directory to PATH:
-```
-# in file .profile
-...
-export GOPATH="/path/to/your/favorite/go/directory"
-export PATH="${PATH}:${GOPATH}/bin"
-```
+
 - Build and install the program
 ```
 cd $GOPATH
 go install github.com/elias-boemeke/taggo
 ```
-- Finished! :)
-
 
 ## Usage
 
