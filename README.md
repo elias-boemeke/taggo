@@ -29,8 +29,8 @@ export PATH="${PATH}:${GOPATH}/bin"
 - Install taglib with your favorite package manager i.e. `pacman -S taglib`
 - Get the required source code:
 ```
-go get "https://github.com/wtolson/go-taglib"
-go get "https://github.com/elias-boemeke/taggo"
+go get github.com/wtolson/go-taglib
+go get github.com/elias-boemeke/taggo
 ```
 
 - Build and install the program
